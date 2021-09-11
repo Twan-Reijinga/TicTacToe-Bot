@@ -38,5 +38,4 @@ def main():
             print('- it\'s a draw -')
             updateBoard(board)
 
-
 main()
