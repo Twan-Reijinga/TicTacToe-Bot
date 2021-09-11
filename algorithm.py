@@ -19,8 +19,6 @@ def getBestMove(board, symbol):
     bestMove = getBoardPos(bestPos, board)
     return bestMove
 
-        
-
 def getEvalIndex(board, symbol):
     if symbol == 'o':
         nextSymbol = 'x'
@@ -39,8 +37,6 @@ def getEvalIndex(board, symbol):
         evalIndexes.append(evalIndex)
     return max(evalIndexes)
         
-            
-
 def getAllPossibleMoves(board, symbol):
     allMoves = []
     for i in range(len(board)):
@@ -61,11 +57,3 @@ def getBoardPos(bestPos, board):
             emptySpaces += 1
         if emptySpaces == bestPos+1:
             return position # returns position of the bestMove
-
-# board = [
-#     'x', 'o', 'o',
-#     '_', 'o', '_',
-#     '_', 'x', 'x',
-# ]
-# bestMove = getBestMove(board, 'o')
-# print(bestMove)
